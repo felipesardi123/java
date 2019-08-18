@@ -21,7 +21,10 @@ public class App {
         // Lambda
         Oven ovenLambda = new Oven();
         ovenLambda.bake( () -> System.out.println("Pizza Lambda") );
-        ovenLambda.bake( () -> System.out.println("Pizza dough, tomato sauce, mozzarella, pepperoni.") );
-        ovenLambda.bake( () -> System.out.println("Pizza dough, tomato sauce, mozzarella, basil.") );
+        ovenLambda.bake( () -> System.out.println("Pepperoni: Pizza dough, tomato sauce, mozzarella, pepperoni.") );
+        ovenLambda.bake( () -> {
+            System.out.println("Neopolitan:");
+            System.out.println("Pizza dough, tomato sauce, mozzarella, basil.");
+        } );
     }
 }

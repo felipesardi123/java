@@ -10,7 +10,7 @@ dependencies {
 }
 
 application {
-    mainClassName = 'exemplo.cvc.App'
+    mainClassName = 'exemplo.media.App'
 }
 
 test {

@@ -7,8 +7,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test void instanceTest() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest);
+    }
+
+    @Test void mediaExampleTest() {
+        double notas[] = {6.0, 7.0};
+        double media = App.media(notas);
+        assertEquals(6.5, media, 0.01);
     }
 }
